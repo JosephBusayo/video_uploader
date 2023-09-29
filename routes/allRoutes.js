@@ -1,11 +1,12 @@
 import { Router } from 'express';
-import postVideo from '../controllers/videoController.js';
-import upload from '../config/multerConfig.js';
+import multerConfig from '../config/multerConfig.js';
 const router = Router();
+import {post_video, get_all_video} from '../controllers/videoController.js';
 
 
 
-router.post('/uploadVideo', upload.videoUpload.any(), postVideo);
+router.post('/uploadVideo', multerConfig.videoUpload.any(), post_video);
+router.get('/getAllVideo', get_all_video);
 export default router; 
 
 

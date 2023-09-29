@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+/* import dotenv from 'dotenv';
 import cloudinary from 'cloudinary';
 
 dotenv.config();
@@ -21,7 +21,7 @@ const uploads = (file) => {
     });
 };
 
-export { uploads };
+export { uploads }; */
 
 
 /* require("dotenv").config();
